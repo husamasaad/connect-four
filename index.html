@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/694772d257.js" crossorigin="anonymous"></script>
+  <title>Connect Four</title>
+</head>
+<body>
+
+  <div class="game-won">
+    <div class="game-rules show">
+      <h2 id="results">Player 1 is the winner</h2>
+      <ul>
+        <li id="play-again">Play Again</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="start-game-con">
+    <div class="start-game">
+      <div class="logo-con">
+        <div class="logo">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <h1>Connect <span>Four</span></h1>
+      </div>
+      <ul>
+        <li>Vs 2nd Player</li>
+        <li title="not Yet, but Soon!">Vs Computer</li>
+        <li>Game Rules</li>
+      </ul>
+    </div>
+    <div class="game-rules">
+      <h2>RULEs</h2>
+      <h3>obkectives</h3>
+      <p>Be the first player to connect 4 of the same colored discs in a row (either vertically, horizontally, or diagonally).</p>
+      <h3>how to play</h3>
+      <p>Players must alternate turns, and only one disc can be dropped in each turn. The game ends when there is a 4 in a (row | column | diagonal) or a stalemate.</p>
+      <span id="close-rules">
+        <i class="fa-solid fa-check"></i>
+      </span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <button id="menu">Menu</button>
+      <div class="logo-con">
+        <div class="logo">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <h1>Connect <span>Four</span></h1>
+      </div>
+      <button id="reset">Restart</button>
+    </div>
+  </header>
+  
+  <div class="container">
+  </div>  
+  <div class="player-turn">
+    <h2 class="p1" id="pl-turn">Player 1's turn</h2>
+  </div>
+  <table class="board pt1">
+    <tr>
+      <td data-slot="6"></td>
+      <td data-slot="13"></td>
+      <td data-slot="20"></td>
+      <td data-slot="27"></td>
+      <td data-slot="34"></td>
+      <td data-slot="41"></td>
+    </tr>
+    <tr>
+      <td data-slot="5"></td>
+      <td data-slot="12"></td>
+      <td data-slot="19"></td>
+      <td data-slot="26"></td>
+      <td data-slot="33"></td>
+      <td data-slot="40"></td>
+    </tr>
+    <tr>
+      <td data-slot="4"></td>
+      <td data-slot="11"></td>
+      <td data-slot="18"></td>
+      <td data-slot="25"></td>
+      <td data-slot="32"></td>
+      <td data-slot="39"></td>
+    </tr>
+    <tr>
+      <td data-slot="3"></td>
+      <td data-slot="10"></td>
+      <td data-slot="17"></td>
+      <td data-slot="24"></td>
+      <td data-slot="31"></td>
+      <td data-slot="38"></td>
+    </tr>
+    <tr>
+      <td data-slot="2"></td>
+      <td data-slot="9"></td>
+      <td data-slot="16"></td>
+      <td data-slot="23"></td>
+      <td data-slot="30"></td>
+      <td data-slot="37"></td>
+    </tr>
+    <tr>
+      <td data-slot="1"></td>
+      <td data-slot="8"></td>
+      <td data-slot="15"></td>
+      <td data-slot="22"></td>
+      <td data-slot="29"></td>
+      <td data-slot="36"></td>
+    </tr>
+    <tr>
+      <td data-slot="0"></td>
+      <td data-slot="7"></td>
+      <td data-slot="14"></td>
+      <td data-slot="21"></td>
+      <td data-slot="28"></td>
+      <td data-slot="35"></td>
+    </tr>
+  </table>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
