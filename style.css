@@ -146,11 +146,11 @@ li {
   transition: .3s;
 }
 
-.start-game li:not(:nth-child(2)):hover {
+.start-game li:not(.ai):hover {
   background-color: brown;
 }
 
-.start-game li:nth-child(2) {
+.start-game li.ai {
   text-decoration: line-through;
 }
 
